@@ -1,0 +1,428 @@
+			Day1(01-12-2022) -- Introduction
+-------------------------------------------------------------------------------------------------------------------------------------
+Python is a General Purpose Programming Language.
+It is Highly Growing and high demand.
+It was created by Guido van Rossum during 1985- 1990(1991) at mathematics and Science Research center called "CWI"
+CWI --> Centrum Wiskunde & Informatica, located in Netherland's.
+Also it is a interpreted, interactive, object-oriented and high-level programming language.
+Python is dynamically-typed and Garbage-collected programming language.
+Python is Open Source and available for Free of Cost.
+Python is Easy and simple to Learn.
+
+Python supports different varieties of languages features like
+1. Object Oriented Programming Language --> Class, objects
+2. Procedure ,,	,,	,, 
+3. Scripting Language
+4. Modular 	,,	,,
+
+By using python we can implement the different varieties of applications
+1. Web Applications
+2. Mobile Applications
+3. GUI Applications
+4. Data Science
+5. Data Analytics
+6. Automation
+7. Scientific Calculation Apps
+8. Gaming Applications
+9. Animation Apps
+10. Scripting
+
+The Companies which  are using python
+1. Google 
+2. Intel
+3. NASA 
+4. PayPal 
+5. Facebook 
+6. Youtube
+7. Amazon 
+8. Netflix
+9. Pinterest
+10. Uber
+
+Careers:
+Game developer
+Web designer
+Python developer/Software Engineer/ Associate/ Data Engineer / Sr Sf Eng / BackEnd Developer 
+Full-stack developer
+Machine learning engineer
+Data scientist
+Data analyst
+Data engineer
+DevOps engineer
+Software engineer
+
+			Day2(05-12-2022) - Batch Vs Interactive/ Static Vs Dynamic Types
+-------------------------------------------------------------------------------------------------------------------------------------
+We can develop a python programs in Two ways
+1. Interactive Mode
+2. Batch Mode
+
+1. Interactive Mode:
+   1. Submitting a python statements one by one to the python interpreter is called as "Interactive mode"
+   2. We can submit these statements in Command Line or Python Shell
+   3. Once we exit from the command line or python shell, we wil lost the data.
+
+a = 10
+print(a)   ---> 10
+
+b = "Python"
+print(b) -----> Python
+
+print(100+200)   ---> 300
+
+   4. we will not use  Command Line or Python Shell for developing a projects.
+   5. To develop a projects we will use IDE's
+
+2. Batch Mode:
+   1. Writting group of python statements and store into a file with .py extension and run that file to python interpreter is called "Batch Mode"
+  2. To write a code files, we will use IDE(Integrated Development Envirionment)
+  3. Open a file and save with any name along with .py extension
+Example: ex1.py
+a = 100
+b = "Python"
+c = True
+print(a)
+print(b)
+print(c)
+Output:
+100
+Python
+True
+   4. Save a file and execute in command prompt --> Go to file location --> python ex1.py
+
+DataTypes:
+1. Datatypes are nothing but keywords and which are used to specify what type of data has to store in the variable.
+2. If we not specify datatype to a variable, memory will not be allocated for that variable.
+3. If memory not allocated, we will not able to store a variable data.
+4. Programming Languages supports Two kinds of DataTypes
+1. Static DataTypes
+2. Dynamic DataTypes
+
+1.Static DataTypes:
+   1. In this, Programmer should need to deifne a datatype to the defined variable explicitly.
+   2. Once we define the datatype, we will not be able to modify in the entire program.
+   3. In this, one variable will store only one type of data
+   Example: C, C++, Java, .net -----
+        int a=10
+        a = 20
+        a = "Java" ---> Error
+
+2. Dynamic DataTypes:
+   1. In this, Programmer should not need to define a datatype explicitly.
+   2. At the time of execution of a program, datatype of a variable will be decided automatically based on the given value.
+   3. We can modify the variable of a datatype at any time.
+   4. We can able to store different varieties of data.
+Example: Python, JavaScript ----
+
+a = 100 ---> int
+a = 200 ---> int
+a = "python" ---> str
+a = 123.78 --> Float
+
+* In python we have categorized datatypes into 2 types
+1. Fundamental Types
+2. Collection Types
+
+Data --> Name, Age, Ph No, Account No
+Operaions(Methods/Functions)  --> Withdraw, Deposit, Transfer
+
+DataTypes 
+Name --- String
+
+Age ---- Integer
+name="Anil"
+
+10+20
+30-20
+20*30
+
+Statistically Typed --> 
+int a=10
+char b = "xyz"
+bool c = False
+
+Dynamically Typed --> Python
+a = 100
+b = "xyz"
+c = False
+
+			Day3(06-12-2022) - Fundamental Data Types
+-------------------------------------------------------------------------------------------------------------------------------------
+1. Fundamental Types:
+1. Fundamental Types are used to store data only.
+2. We have the follwing datatypes in python 
+	1. Integer
+	2. Float
+	3. Complex
+	4. Boolean
+	5. Strings
+	6. range
+
+1. Integer:
+
+a = 100
+b = 200
+print(a)
+type(a)
+print(id(a))
+
+a = 100
+b = 200
+print(id(a))
+print(id(b))
+
+c = 100
+print(id(c))
+
+2. Float:
+e = 123.67
+print(e)
+print(type(e))
+print(id(e))
+
+3. Complex:
+a+ib ---> 
+a = 2+3j
+print(a)
+print(type(a))
+print(id(a))
+
+4. Boolean:
+True/False
+
+a = True
+b = False
+
+print(a)
+print(type(a))
+print(id(a))
+
+
+print(b)
+print(type(b))
+print(id(b))
+
+print(a==b)
+
+5. range:
+
+# Syntax : range(start, end, step)
+print(range(10)) --> range(0,10) --> 0,1,2,3,4,5,6,7,8,9
+print(range(1,9,2))  --> 1,3,5,7
+for i in range(1,9,2):
+    print(i)  ----> 1,3,5,7 ---> Line by Line
+
+6. Strings:
+1. Sequence or Group of characters are called as "Strings"
+2. The Datatype of strings is "str" class
+3. We can define a string by using single quotes or Double quotes
+4. To work with multiline strings we need to use Triple Single Quotes or Triple Double Quotes
+5. We can represent the string characters by using Index.
+6. Both Positive and Negative indexing will support
+7. positive Indexing --> Strats from 0  and ends with length -1 
+8. Negative Indexing --> Starts from -1 and ends with -length
+9. Both Positive and Negative Slicing will support
+10. Strings are Immutable
+
+a = "Python"
+print(a)
+print(type(a))
+print(len(a)) 
+
+print("Positive Indexing")
+print(a[0])
+print(a[1])
+print(a[5])
+
+print("Negative Indexing")
+print(a[-1])
+print(a[-4])
+print(a[-6])
+
+# positive Indexing --> Strats from 0  and ends with length -1 
+# Negative Indexing --> Starts from -1 and ends with length 
+
+# Slicing
+print("Positive Slicing")
+print(a[0:3])  # --> 0,1,2
+print(a[7:12])
+
+print("Negative Slicing")
+print(a[-4:])
+print(a[-3:-2])
+print(a[::-1])
+
+# print(dir(a))
+# ['capitalize', 'casefold', 'center', 'count', 'encode', 'endswith', 
+# 'expandtabs', 'find', 'format', 'format_map', 'index', 'isalnum', 
+# 'isalpha', 'isdecimal', 'isdigit', 'isidentifier', 'islower', 
+# 'isnumeric', 'isprintable', 'isspace', 'istitle', 'isupper',
+# 'join', 'ljust', 'lower', 'lstrip', 'maketrans', 'partition', 
+# 'replace', 'rfind', 'rindex', 'rjust', 'rpartition', 'rsplit', 
+# 'rstrip', 'split', 'splitlines', 'startswith', 'strip', 'swapcase', 
+# 'title', 'translate', 'upper', 'zfill']
+# Python
+# print("Python" == "python".title())
+
+print(a.istitle())
+b = "Java"
+print(a+ " " +b)
+
+			Day4(07-12-2022) - Reading data from Keyboard
+-------------------------------------------------------------------------------------------------------------------------------------
+1. Immutable Objects
+2. Mutable Objects
+
+1. Immutable Objects:
+1. Once we define an object we can not make any changes or we can not edit 
+2. We can not create Two diff objects with the same data
+3. Will give better performance
+4. All fundamental datatypes and Tuples will comes under Immutable objects
+5. Applying iterations on Immutable objects takes less time.
+
+Examples:
+a = 100
+a[0] --> Error
+b = "Python"
+b[0] = "X" ---> Error
+
+x = "Python"
+y = "Python"
+id(x) --> 1904004132008
+id(y) --> 1904004132008
+
+2. Mutable:
+1. Once we define an object we can make any changes or we can edit 
+2. We can create Two diff objects with the same data
+3. Will give lower performance when compared to Immutable objects
+4. List, Set, Dictionary datatypes  will comes under mutable objects
+5. Applying iterations on mutable objects takes longer time when compared to Immutable objects.
+Examples:
+a = [10,20,30] 
+b = [10,20,30]
+id(a) --> 1904007304392
+id(b) ---> 1904007322440
+
+a[0] = 100 --> [100,20,30]
+b [1] = 200 --> [10, 200,30]
+
+Reading from Keyboard:
+1. We can read the data from keyboard by using "input()" keyword/function
+2. input() function will always read the data in String format
+3. After reading the data in the form of string, we can convert the data in the from of required format by using conversion functions
+Examples:
+first = input("First Word: ")
+second = input("second Word: ")
+third = "language"
+print(first)
+print(second)
+print(first + " " + second + " " + third)
+
+Examples: Conversion
+
+first = int(input("First Number: "))
+second = int(input("second Number: "))
+third = 100
+print(first)
+print(second)
+print(first + second + third)
+
+Examples:
+a = 100
+b = 200
+x = "Python"
+y = "language"
+c = 300
+
+print(a+b) --> 300
+print(b-a) --> 100
+print(a-b) --> -100
+print(x+y) --> Python language
+print(y+x) --> language Python
+print(a+x) --> unsupported Operand error
+print(y+c) --> unsupported Operand error
+print(str(a)+x) --> 100Python
+
+			Day5(08-12-2022) - List
+-------------------------------------------------------------------------------------------------------------------------------------
+2. Collection Types:
+1. These are used for storing the objects.
+2. We have the following types
+	. List  
+	. Tuple
+	. Set
+	. Dictionary
+3. All collection type objects are iterable objects.
+4. By using the methods of a Collection type, we can perform operations on the elements of an object.
+
+1. LIST:
+1. Lists can be created by using [] or list() function
+2. List objects are Mutable 
+3. List elements can be either mutable or immutable
+4. Both negative and positive indexing supports
+5. Insertion order is preserved
+6. Duplicate elements are allowed
+7. Heterogeneous elements are allowed
+
+Examples:
+a = []
+print(a)
+print(type(a))
+print(id(a))
+
+a = list()
+print(a)
+print(type(a))
+print(id(a))
+
+a= [10, 13.45,  "abc", 3+4j, True]
+print(a)
+print(type(a))
+print(id(a))
+
+Examples:
+a= [10, 13.45,  "abc", 3+4j, True]
+print(a[0])
+print(a[-3])
+print(a[1:4])
+print(a[-3:-1])
+
+* To get the methods of string, we need to use the "dir()" command
+Example:
+a = [10,20,30,10,40,20,50,60]
+print(a)  --> 
+print(len(a)) -->
+a.append(80) -->
+a.count(10)   -->
+a.index(40)
+a.insert(6,70)  --> .insert(position, value)
+a.remove(50)
+a.pop()  --> Removes last element/value and return the same value/element
+a.extend([100,200])
+a.reverse()
+a.sort()
+a.clear()
+
+Example: Nested Lists
+l = [[10,20,30],[40,50,60], [70,80,90]]
+print(l[0])
+print(l[-1])
+print(l[-2][-2])
+
+Python List Methods
+Python has many useful list methods that makes it really easy to work with lists.
+
+Method	Description
+append()	add an item to the end of the list
+extend()	add items of lists and other iterables to the end of the list
+insert()	inserts an item at the specified index
+remove()	removes item present at the given index
+pop()	returns and removes item present at the given index
+clear()	removes all items from the list
+index()	returns the index of the first matched item
+count()	returns the count of the specified item in the list
+sort()	sort the list in ascending/descending order
+reverse()	reverses the item of the list
+copy()	returns the shallow copy of the list
+
+
